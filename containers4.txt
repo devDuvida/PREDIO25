@@ -1,0 +1,24 @@
+Container de Banco de Dados Relacional:
+Tecnologias Sugeridas: PostgreSQL, MySQL.
+Uso: Informações de jogos, usuários, transações (onde a integridade dos dados é crucial).
+Container de Banco de Dados NoSQL:
+Tecnologias Sugeridas: MongoDB (para documentos), Redis (para cache/sessões), Cassandra (para dados distribuídos).
+Uso: Avaliações e comentários (escalabilidade flexível), dados de sessão, cache.
+5. Containers de Serviços Auxiliares
+Serviços de suporte que não são parte direta da lógica de negócio principal, mas são essenciais para o funcionamento do site.
+
+Container de Armazenamento de Arquivos:
+Função: Armazenar imagens, vídeos, assets do jogo.
+Tecnologias Sugeridas: Amazon S3, Google Cloud Storage, MinIO.
+Container de Cache:
+Função: Armazenar dados frequentemente acessados para reduzir a carga nos bancos de dados e melhorar o tempo de resposta.
+Tecnologias Sugeridas: Redis, Memcached.
+Container de Fila de Mensagens (Opcional):
+Função: Para comunicação assíncrona entre microserviços (ex: processamento de pedidos, notificações).
+Tecnologias Sugeridas: RabbitMQ, Apache Kafka, Amazon SQS.
+Container de Busca (Opcional, para buscas mais complexas):
+Função: Otimizar a busca de texto completo nos jogos e notícias.
+Tecnologias Sugeridas: Elasticsearch, Apache Solr.
+Container de Monitoramento e Logs:
+Função: Coletar métricas, logs e monitorar a saúde dos containers.
+Tecnologias Sugeridas: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana).

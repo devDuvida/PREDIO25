@@ -1,0 +1,29 @@
+containers
+
+Containers de Microserviços (Backend)
+Aqui é onde a lógica de negócio do site é realmente implementada, dividida em serviços menores e independentes. Cada microserviço pode ter seu próprio banco de dados e ser desenvolvido em diferentes tecnologias.
+
+Container de Jogos:
+Função: Gerenciamento de informações sobre os jogos.
+Dados: Título, descrição, gênero, plataforma, preço, imagens, vídeos, desenvolvedora, publisher, requisitos de sistema, data de lançamento.
+APIs: CRUD (Create, Read, Update, Delete) para jogos, busca, filtros.
+Container de Usuários e Autenticação:
+Função: Gerenciamento de contas de usuários e processos de login/cadastro.
+Dados: Nome de usuário, email, senha (hash), token de sessão, histórico de atividades.
+APIs: Registro, Login, Logout, Perfil de Usuário, Recuperação de Senha.
+Container de Avaliações e Comentários:
+Função: Gerenciamento de avaliações e comentários de usuários sobre os jogos.
+Dados: ID do usuário, ID do jogo, nota, texto do comentário, data.
+APIs: Adicionar avaliação/comentário, listar avaliações por jogo, responder comentários.
+Container de Notícias/Blog:
+Função: Gerenciamento de artigos e notícias.
+Dados: Título, conteúdo, autor, data de publicação, tags.
+APIs: CRUD para notícias, listar notícias, buscar por tags.
+Container de Pagamentos (Opcional, se houver vendas):
+Função: Integração com gateways de pagamento.
+Dados: Transações, status de pagamento.
+APIs: Iniciar transação, verificar status de pagamento.
+Container de Recomendações (Opcional):
+Função: Motor de recomendação de jogos baseado no histórico do usuário ou similaridades.
+Tecnologias Sugeridas: Python (com bibliotecas de Machine Learning).
+APIs: Obter recomendações para um usuário.
